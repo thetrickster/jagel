@@ -1,0 +1,13 @@
+<div class="post">
+	{{ content }}
+
+	<div class="meta">
+		{% if page.tags %}
+			<div class="tags">
+				{% for tag in page.tags %}
+					{{ tag }}{% if forloop.last == false %},{% endif %} 
+				{% endfor %}
+			</div>
+		{% endif %}
+	</div>
+</div>

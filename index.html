@@ -9,3 +9,14 @@ description: "Jason Agel is an audio engineer in New York, NY who has worked wit
 	<li><a href="//soundcloud.com/jasonagel" target="_blank" class="button secondary"><i class="icon foundicon-cloud"></i><span class="hide-for-small">SoundCloud</span></a></li>
 	<li><a href="mailto:info@jasonagel.com?subject=Inquiry from JasonAgel.com" class="button secondary"><i class="icon foundicon-mail"></i><span class="hide-for-small">Email</span></a></li>
 </ul>
+<ul class="posts">
+	{% for post in site.posts %}
+		{% assign category = post.category %}
+		{% assign featured = post.featured %}
+		{% if featured == true %}
+			{% if category == 'projects' %}
+				<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+</ul>
