@@ -1,3 +1,6 @@
+# J. Agel website project
+
+Forked from [git@github.com:himynameisjonas/jekyll-heroku-unicorn.git]
 Jekyll + Heroku + Unicorn
 Blazing fast blogging with Jekyll deployed to Heroku with 6 Unicorn workers.
 
